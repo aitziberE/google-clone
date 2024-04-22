@@ -1,0 +1,56 @@
+@import 'reset.css';
+@import 'base.css';
+
+@import 'layout/header.css';
+@import 'layout/main.css';
+@import 'layout/footer.css';
+
+@import 'utils.css';
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding:1rem;
+    align-items: center;
+}
+.header__link{
+    margin-left: 1rem;
+}
+.header__img{
+    height: 20px;
+    width: auto;
+}
+.header__button{
+    cursor:pointer;
+    background-color: lightblue;
+    border: 1px solid transparent;
+    color:white;
+    text-align: center;
+    border-radius: 4px;
+}
+.header__button:hover{
+    background: darkblue;
+    box-shadow: 0 1px 3px 1px black, 0 1px 2px 0 black;
+}
+
+.main{
+    height: 80vh; /* ocupa el 80% de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__img{
+    width:12.5rem;
+    height:auto;
+}
+.footer{
+    background-color: lightgray;
+}
+/* __elemento
+--modificador --actived --is-actived*/
+.d-flex{ /* clase util */
+    display:flex;
+    align-items: center;
+}
